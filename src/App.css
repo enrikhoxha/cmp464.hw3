@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  padding: 0%;
+  margin: 0;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid grey;
+  display: grid;
+  place-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+}
+
+.board {
+  width: 500px;
+  height: 900px;
+  flex-direction: column;
+  padding: 0.5em;
+  border: 2px solid black;
+  display: flex;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin: 4px;
+}
+
+.game {
+  width: 100vw;
+  height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+
+.letter {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  flex: 33%;
+  height: 100%;
+  border: 1px solid grey;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+}
+
+#correct {
+  background-color: #43ff35;
+}
+
+#partiallyCorrect {
+  background-color:yellow;
+}
+
+#error {
+  background-color: #5c5b5d;
+}
+
+.keyboard {
+  width: 1000px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.key {
+  font-size: 20px;
+  background-color: rgb(206, 202, 202);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  width: 45px;
+  height: 60px;
+  margin: 3px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+#large {
+  width: 100px;
+}
+#disabled {
+  background-color: #ff0000;
+}
+
+.line1Keys {
+  flex: 30%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.line2Keys {
+  flex: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+.line3Keys {
+  flex: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
